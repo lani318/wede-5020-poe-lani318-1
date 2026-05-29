@@ -1,304 +1,386 @@
 
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-body{
-    background-color:#c02722c2;
-    color:#333;
-    line-height:1.8;
+body {
+    line-height: 1.8;
 }
 
-/* ===================================
-   HEADER
-=================================== */
-
-header{
-    padding:3%;
-    text-align:center;
-    background-color: dark rgb(9, 12, 10);
+header {
+    text-align: center;
+    padding: 3%;
 }
 
-header h1{
-    font-size:300%;
-    margin-bottom:1%;
-    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
-    color:#1c4e80;
+header h1 {
+    font-size: 280%;
 }
 
-header p{
-    font-size:120%;
-    color:#1c4e80;
+header p {
+    font-size: 120%;
 }
 
-/* ===================================
-   NAVIGATION
-=================================== */
-
-nav{
-    padding:1.5%;
-    text-align:center;
+nav {
+    padding: 1.5%;
+    text-align: center;
 }
 
-nav a{
-    text-decoration:none;
-    color:white;
-    margin:2%;
-    font-size:115%;
-    font-weight:bold;
+nav a {
+    text-decoration: none;
+    margin: 2%;
+    font-size: 120%;
+    font-weight: bold;
 }
 
-nav a:hover{
-    color:#ffd166;
+nav a:hover {
+    color: #ffd166;
 }
 
-/* ===================================
-   SECTIONS
-=================================== */
-
-section{
-    width:90%;
-    margin:auto;
-    margin-top:3%;
-    padding:3%;
-    border-radius:20px;
-    background-color:white;
-    box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+section {
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2{
-    font-size:240%;
-    margin-bottom:2%;
+h2 {
+    font-size: 220%;
+    margin-bottom: 2%;
 }
 
-section p{
-    font-size:115%;
+h3 {
+    font-size: 160%;
+    margin-bottom: 2%;
 }
 
-/* ===================================
-   IMAGES
-=================================== */
-
-img{
-    width:100%;
-    border-radius:15px;
+p {
+    font-size: 115%;
+    line-height: 180%;
 }
 
-/* ===================================
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ==============================
    BUTTONS
-=================================== */
+============================== */
 
-button,
-input[type="submit"]{
-    padding:1.5% 4%;
-    border:none;
-    border-radius:8px;
-    color:white;
-    cursor:pointer;
-    font-size:110%;
-}
-home-page{
-    background-color:#edf4ff;
-    font-family:Arial, sans-serif;
-}
-
-.home-page header{
-    background-color:#1c4e80;
+.btn,
+input[type="submit"] {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 1.5% 3%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2%;
 }
 
-.home-page nav{
-    background-color:#16324f;
+/* ==============================
+   HOME PAGE
+============================== */
+
+.home-page {
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
 }
 
-.home-banner{
-    text-align:center;
+.home-page header {
+    background-color: #004b87;
+    color: white;
 }
 
-.home-banner img{
-    width:80%;
-    margin:auto;
+.home-page nav {
+    background-color: #002b5c;
 }
 
-.home-services{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+.home-page nav a {
+    color: white;
 }
 
-.home-card{
-    width:30%;
-    padding:2%;
-    background-color:#ffffff;
-    border-radius:15px;
-    margin-top:2%;
-}
-.about-page{
-    background-color:#eefaf0;
-    font-family:Georgia, serif;
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+    color: #004b87;
 }
 
-.about-page header{
-    background-color:#006633;
+/* ==============================
+   ABOUT PAGE
+============================== */
+
+.about-page {
+    background-color: #e8f8e8;
+    font-family: Georgia, serif;
 }
 
-.about-page nav{
-    background-color:#004d26;
+.about-page header {
+    background-color: #2d6a4f;
+    color: white;
 }
 
-.about-section,
-.mission-section,
-.team-section{
-    background-color:white;
+.about-page nav {
+    background-color: #1b4332;
 }
 
-.about-image{
-    width:75%;
-    display:block;
-    margin:auto;
+.about-page nav a {
+    color: white;
 }
 
-.team-container{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+    color: #2d6a4f;
 }
 
-.team-box{
-    width:30%;
-    background-color:#f7f7f7;
-    padding:2%;
-    border-radius:15px;
-    text-align:center;
-}
-services-page
-   .services-page{
-    background-color:#fff4e6;
-    font-family:"Courier New", monospace;
+/* ==============================
+   SERVICES PAGE
+============================== */
+
+.services-page {
+    background-color: #fff4e6;
+    font-family: "Courier New", monospace;
 }
 
-.services-page header{
-    background-color:#cc6600;
+.services-page header {
+    background-color: #e67e22;
+    color: white;
 }
 
-.services-page nav{
-    background-color:#994d00;
+.services-page nav {
+    background-color: #c96a12;
 }
 
-.service-container{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+.services-page nav a {
+    color: white;
 }
 
-.service-box{
-    width:30%;
-    background-color:white;
-    padding:2%;
-    border-radius:15px;
-    margin-top:2%;
+.services-page h1,
+.services-page h2,
+.services-page h3 {
+    color: #e67e22;
 }
 
-.service-box h3{
-    color:#cc6600;
- background-color:#f7f7f7;
+/* ==============================
+   ENQUIRY PAGE
+============================== */
 
-    font-family:"Courier New", monospace;
-
-
-}
-.ooking-page{
-    background-color:#fffce8;
-    font-family:"Trebuchet MS", sans-serif;
+.enquiry-page {
+    background-color: #e8f4ff;
+    font-family: Tahoma, sans-serif;
 }
 
-.booking-page header{
-    background-color:#b38f00;
+.enquiry-page header {
+    background-color: #0077b6;
+    color: white;
 }
 
-.booking-page nav{
-    background-color:#806600;
+.enquiry-page nav {
+    background-color: #023e8a;
 }
 
-.booking-section input,
-.booking-section select,
-.booking-section textarea{
-    width:100%;
-    padding:1.5%;
-    margin-top:1%;
-    border-radius:8px;
-    border:1px solid #cccccc;
-}
-.booking-section input[type="submit"]{
-    background-color:#7b2cbf;
-    color:white;
-}
-.contact-page{
-    background-color:#fff0f7;
-    font-family:Verdana, sans-serif;
+.enquiry-page nav a {
+    color: white;
 }
 
-.contact-page header{
-    background-color:#cc0066;
+.enquiry-page h1,
+.enquiry-page h2,
+.enquiry-page h3 {
+    color: #0077b6;
 }
 
-.contact-page nav{
-    background-color:#99004d;
+/* ==============================
+   BOOKING PAGE
+============================== */
+
+.booking-page {
+    background-color: #f3e8ff;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
-.contact-details,
-.contact-form,
-.hours{
-    background-color:#fafafa;
-    padding:3%;
-    border-radius:15px;
-    margin-top:2%;
+.booking-page header {
+    background-color: #7b2cbf;
+    color: white;
 }
 
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:1.5%;
-    border-radius:8px;
-    border:1px solid #cccccc;
+.booking-page nav {
+    background-color: #5a189a;
 }
 
-.contact-form input[type="submit"]{
-    background-color:#cc0066;
+.booking-page nav a {
+    color: white;
 }
-footer{
-    background-color:#1f1f1f;
-    color:white;
-    text-align:center;
-    padding:2%;
-    margin-top:4%;
-}
-@media screen and (max-width:768px){
 
-    nav a{
-        display:block;
-        margin:3%;
+.booking-page h1,
+.booking-page h2,
+.booking-page h3 {
+    color: #7b2cbf;
+}
+
+/* ==============================
+   CONTACT PAGE
+============================== */
+
+.contact-page {
+    background-color: #fde2f3;
+    font-family: Verdana, sans-serif;
+}
+
+.contact-page header {
+    background-color: #d63384;
+    color: white;
+}
+
+.contact-page nav {
+    background-color: #ad1457;
+}
+
+.contact-page nav a {
+    color: white;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+    color: #d63384;
+}
+
+/* ==============================
+   SERVICES SECTION
+============================== */
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 30%;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box img {
+    width: 100%;
+}
+
+/* ==============================
+   TEAM SECTION
+============================== */
+
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    width: 30%;
+    background-color: white;
+    padding: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-role {
+    font-weight: bold;
+}
+
+/* ==============================
+   IMAGES
+============================== */
+
+.about-image,
+.booking-image,
+.contact-image {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+/* ==============================
+   FORMS
+============================== */
+
+form {
+    margin-top: 2%;
+}
+
+input,
+select,
+textarea {
+    width: 95%;
+    padding: 1.5%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 4%;
+}
+
+footer p {
+    color: white;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media screen and (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 3%;
     }
 
-    .home-card,
     .service-box,
-    .team-box{
-        width:100%;
+    .team-box {
+        width: 100%;
     }
 
-    .about-image{
-        width:95%;
+    .about-image,
+    .booking-image,
+    .contact-image {
+        width: 95%;
     }
 
-    header h1{
-        font-size:220%;
+    header h1 {
+        font-size: 220%;
     }
 
-    h2{
-        font-size:180%;
+    h2 {
+        font-size: 180%;
     }
 
+    p {
+        font-size: 105%;
+    }
 }
