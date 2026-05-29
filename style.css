@@ -1,193 +1,164 @@
 
-*{
 
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
+
 
 body{
-    background-color:#f5f5f5;
-    color:#333333;
+    background-color:#c02722c2;
+    color:#333;
+    line-height:1.8;
 }
 
-/* =====================================================
+/* ===================================
    HEADER
-===================================================== */
+=================================== */
 
 header{
-    width:100%;
-    padding:2%;
+    padding:3%;
     text-align:center;
+    background-color: dark rgb(9, 12, 10);
 }
 
 header h1{
-    font-size:280%;
+    font-size:300%;
+    margin-bottom:1%;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+    color:#1c4e80;
 }
 
 header p{
     font-size:120%;
-    margin-top:1%;
+    color:#1c4e80;
 }
 
-/* =====================================================
-   NAVIGATION BAR
-===================================================== */
+/* ===================================
+   NAVIGATION
+=================================== */
 
 nav{
-    width:100%;
     padding:1.5%;
     text-align:center;
 }
 
 nav a{
     text-decoration:none;
+    color:white;
     margin:2%;
-    font-size:120%;
+    font-size:115%;
     font-weight:bold;
 }
 
 nav a:hover{
-    text-decoration:underline;
+    color:#ffd166;
 }
 
-/* =====================================================
-   MAIN CONTENT
-===================================================== */
+/* ===================================
+   SECTIONS
+=================================== */
 
 section{
     width:90%;
     margin:auto;
+    margin-top:3%;
     padding:3%;
+    border-radius:20px;
+    background-color:white;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.1);
 }
 
-h2{
-    font-size:220%;
+section h2{
+    font-size:240%;
     margin-bottom:2%;
 }
 
-h3{
-    font-size:160%;
-    margin-bottom:2%;
-}
-
-p{
+section p{
     font-size:115%;
-    line-height:180%;
 }
+
+/* ===================================
+   IMAGES
+=================================== */
 
 img{
-    max-width:100%;
-    border-radius:10px;
+    width:100%;
+    border-radius:15px;
 }
 
-/* =====================================================
-   HOME PAGE
-===================================================== */
+/* ===================================
+   BUTTONS
+=================================== */
 
-.home-page{
-    background-color:#e8f0fe;
+button,
+input[type="submit"]{
+    padding:1.5% 4%;
+    border:none;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+    font-size:110%;
+}
+home-page{
+    background-color:#edf4ff;
     font-family:Arial, sans-serif;
 }
 
 .home-page header{
     background-color:#1c4e80;
-    color:white;
 }
 
 .home-page nav{
     background-color:#16324f;
 }
 
-.home-page nav a{
-    color:white;
-}
-
 .home-banner{
     text-align:center;
-    background-color:white;
-    border-radius:10px;
-    padding:4%;
 }
 
-.home-banner h2{
-    color:#003366;
+.home-banner img{
+    width:80%;
+    margin:auto;
 }
 
 .home-services{
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-    margin-top:3%;
 }
 
 .home-card{
     width:30%;
-    background-color:white;
     padding:2%;
-    border-radius:10px;
-    margin-bottom:3%;
-    box-shadow:0px 0px 8px lightgray;
+    background-color:#ffffff;
+    border-radius:15px;
+    margin-top:2%;
 }
-
-/* =====================================================
-   ABOUT PAGE
-===================================================== */
-
 .about-page{
-    background-color:#eef9f1;
+    background-color:#eefaf0;
     font-family:Georgia, serif;
 }
 
 .about-page header{
     background-color:#006633;
-    color:white;
 }
 
 .about-page nav{
     background-color:#004d26;
 }
 
-.about-page nav a{
-    color:white;
-}
-
-.about-section{
+.about-section,
+.mission-section,
+.team-section{
     background-color:white;
-    padding:3%;
-    border-radius:10px;
-    box-shadow:0px 0px 8px lightgray;
-}
-
-.about-section h2{
-    color:#006633;
 }
 
 .about-image{
-    width:70%;
+    width:75%;
     display:block;
     margin:auto;
-    margin-top:2%;
-    margin-bottom:3%;
-}
-
-.mission-section{
-    background-color:white;
-    margin-top:3%;
-    padding:3%;
-    border-radius:10px;
-}
-
-.mission-section h2{
-    color:#006633;
-}
-
-.team-section{
-    background-color:white;
-    margin-top:3%;
-    padding:3%;
-    border-radius:10px;
 }
 
 .team-container{
@@ -198,38 +169,23 @@ img{
 
 .team-box{
     width:30%;
-    background-color:#f8f8f8;
+    background-color:#f7f7f7;
     padding:2%;
-    border-radius:10px;
+    border-radius:15px;
     text-align:center;
-    margin-top:2%;
 }
-
-.team-role{
-    color:#006633;
-    font-weight:bold;
-}
-
-/* =====================================================
-   SERVICES PAGE
-===================================================== */
-
-.services-page{
-    background-color:#fff7e6;
+services-page
+   .services-page{
+    background-color:#fff4e6;
     font-family:"Courier New", monospace;
 }
 
 .services-page header{
     background-color:#cc6600;
-    color:white;
 }
 
 .services-page nav{
     background-color:#994d00;
-}
-
-.services-page nav a{
-    color:white;
 }
 
 .service-container{
@@ -242,172 +198,84 @@ img{
     width:30%;
     background-color:white;
     padding:2%;
+    border-radius:15px;
     margin-top:2%;
-    border-radius:10px;
-    box-shadow:0px 0px 8px lightgray;
 }
 
 .service-box h3{
     color:#cc6600;
+ background-color:#f7f7f7;
+
+    font-family:"Courier New", monospace;
+
+
 }
-
-/* =====================================================
-   BOOKING PAGE
-===================================================== */
-
-.booking-page{
-    background-color:#fffaf0;
+.ooking-page{
+    background-color:#fffce8;
     font-family:"Trebuchet MS", sans-serif;
 }
 
 .booking-page header{
-    background-color:#b35c00;
-    color:white;
+    background-color:#b38f00;
 }
 
 .booking-page nav{
-    background-color:#8a4500;
-}
-
-.booking-page nav a{
-    color:white;
-}
-
-.booking-section{
-    background-color:white;
-    border-radius:10px;
-    padding:3%;
-}
-
-.booking-section h2{
-    color:#b35c00;
-}
-
-.booking-image{
-    width:70%;
-    display:block;
-    margin:auto;
-    margin-top:2%;
-    margin-bottom:3%;
+    background-color:#806600;
 }
 
 .booking-section input,
 .booking-section select,
 .booking-section textarea{
-    width:95%;
+    width:100%;
     padding:1.5%;
     margin-top:1%;
+    border-radius:8px;
     border:1px solid #cccccc;
-    border-radius:5px;
 }
-
 .booking-section input[type="submit"]{
-    background-color:#cc6600;
+    background-color:#7b2cbf;
     color:white;
-    border:none;
-    cursor:pointer;
 }
-
-.booking-section input[type="submit"]:hover{
-    background-color:#994d00;
-}
-
-/* =====================================================
-   CONTACT PAGE
-===================================================== */
-
 .contact-page{
-    background-color:#fdf0f5;
+    background-color:#fff0f7;
     font-family:Verdana, sans-serif;
 }
 
 .contact-page header{
-    background-color:#99004d;
-    color:white;
+    background-color:#cc0066;
 }
 
 .contact-page nav{
-    background-color:#73003a;
+    background-color:#99004d;
 }
 
-.contact-page nav a{
-    color:white;
-}
-
-.contact-section{
-    background-color:white;
-    border-radius:10px;
-    padding:3%;
-}
-
-.contact-image{
-    width:70%;
-    display:block;
-    margin:auto;
-    margin-top:2%;
-    margin-bottom:3%;
-}
-
-.contact-details{
-    background-color:#fafafa;
-    padding:2%;
-    border-radius:10px;
-    margin-bottom:2%;
-}
-
+.contact-details,
+.contact-form,
 .hours{
     background-color:#fafafa;
-    padding:2%;
-    border-radius:10px;
-    margin-bottom:2%;
-}
-
-.contact-form{
-    background-color:#fafafa;
-    padding:2%;
-    border-radius:10px;
+    padding:3%;
+    border-radius:15px;
+    margin-top:2%;
 }
 
 .contact-form input,
 .contact-form textarea{
-    width:95%;
+    width:100%;
     padding:1.5%;
+    border-radius:8px;
     border:1px solid #cccccc;
-    border-radius:5px;
 }
 
 .contact-form input[type="submit"]{
     background-color:#cc0066;
-    color:white;
-    border:none;
-    cursor:pointer;
 }
-
-.contact-form input[type="submit"]:hover{
-    background-color:#99004d;
-}
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
 footer{
-    width:100%;
-    background-color:#222222;
+    background-color:#1f1f1f;
     color:white;
     text-align:center;
     padding:2%;
     margin-top:4%;
 }
-
-footer p{
-    font-size:100%;
-}
-
-/* =====================================================
-   RESPONSIVE DESIGN
-===================================================== */
-
 @media screen and (max-width:768px){
 
     nav a{
@@ -416,26 +284,21 @@ footer p{
     }
 
     .home-card,
-    .team-box,
-    .service-box{
+    .service-box,
+    .team-box{
         width:100%;
     }
 
-    .about-image,
-    .booking-image,
-    .contact-image{
+    .about-image{
         width:95%;
     }
 
-    h1{
-        font-size:200%;
+    header h1{
+        font-size:220%;
     }
 
     h2{
         font-size:180%;
     }
 
-    p{
-        font-size:105%;
-    }
 }
