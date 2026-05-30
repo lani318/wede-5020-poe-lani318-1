@@ -1,43 +1,42 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     line-height: 1.8;
 }
-
+ 
 header {
     text-align: center;
     padding: 3%;
 }
-
+ 
 header h1 {
     font-size: 280%;
 }
-
+ 
 header p {
     font-size: 120%;
 }
-
+ 
 nav {
     padding: 1.5%;
     text-align: center;
 }
-
+ 
 nav a {
     text-decoration: none;
     margin: 2%;
     font-size: 120%;
     font-weight: bold;
 }
-
+ 
 nav a:hover {
     color: #ffd166;
 }
-
+ 
 section {
     width: 90%;
     margin: auto;
@@ -47,31 +46,31 @@ section {
     background-color: white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
-
+ 
 h2 {
     font-size: 220%;
     margin-bottom: 2%;
 }
-
+ 
 h3 {
     font-size: 160%;
     margin-bottom: 2%;
 }
-
+ 
 p {
     font-size: 115%;
     line-height: 180%;
 }
-
+ 
 img {
     max-width: 100%;
     border-radius: 10px;
 }
-
+ 
 /* ==============================
    BUTTONS
 ============================== */
-
+ 
 .btn,
 input[type="submit"] {
     display: inline-block;
@@ -84,34 +83,51 @@ input[type="submit"] {
     cursor: pointer;
     margin-top: 2%;
 }
-
+ 
 /* ==============================
    HOME PAGE
 ============================== */
-
+ 
 .home-page {
-    background-color: #e6f2ff;
+    background-color: #add8e6; /* Light blue page background */
     font-family: Arial, sans-serif;
 }
-
+ 
 .home-page header {
-    background-color: #004b87;
+    background-color: #00008b; /* Dark blue header background */
     color: white;
 }
-
-.home-page nav {
-    background-color: #002b5c;
+ 
+.home-page header h1 {
+    color: white; /* Keep header h1 white for contrast on dark blue header */
 }
-
+ 
+.home-page nav {
+    background-color: #1565c0; /* Blue navigation bar */
+}
+ 
 .home-page nav a {
     color: white;
 }
-
+ 
+.home-page nav a:hover {
+    color: #ffd700; /* Yellow on hover */
+}
+ 
+.home-page section {
+    background-color: #d3d3d3; /* Light grey section/paragraph background */
+}
+ 
+.home-page section p {
+    color: #000000; /* Black text */
+}
+ 
 .home-page h1,
 .home-page h2,
 .home-page h3 {
-    color: #004b87;
+    color: #00008b; /* Dark blue headings */
 }
+ 
 
 /* ==============================
    ABOUT PAGE
