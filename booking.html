@@ -30,21 +30,69 @@
 
 <form>
 
-<label>Name:</label>
-<input type="text">
+<section class="booking-section">
 
-<br><br>
+    <!-- Booking Heading -->
+    <h2>Book a Service Appointment</h2>
 
-<label>Select Service:</label>
-<select>
-<option>Oil Change</option>
-<option>Brake Service</option>
-</select>
+    <!-- Introduction -->
+    <p>
+        Complete the form below to schedule a vehicle service or repair appointment.
+        Our team will contact you to confirm your booking and discuss your vehicle requirements.
+    </p>
 
-<br><br>
+    <!-- Booking Image -->
+    <img
+    src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?q=80&w=1200&auto=format&fit=crop"
+    alt="Customer Booking Vehicle Service"
+    class="booking-image">
 
-<input type="submit" value="Book Now">
+    <!-- Booking Form -->
+    <form action="#" method="post">
 
+        <!-- Customer Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- Customer Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Contact Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Vehicle Make -->
+        <label for="vehicle">Vehicle Make and Model:</label><br>
+        <input type="text" id="vehicle" name="vehicle" required><br><br>
+
+        <!-- Service Required -->
+        <label for="service">Select Service:</label><br>
+        <select id="service" name="service">
+
+            <option>Engine Repair</option>
+            <option>Vehicle Service</option>
+            <option>Brake Repair</option>
+            <option>Wheel Alignment</option>
+            <option>Battery Replacement</option>
+            <option>Diagnostic Inspection</option>
+
+        </select><br><br>
+
+        <!-- Booking Date -->
+        <label for="date">Preferred Booking Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!-- Additional Notes -->
+        <label for="message">Additional Information:</label><br>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Book Appointment">
+
+    </form>
+
+</section>
 </form>
 
 <footer>
