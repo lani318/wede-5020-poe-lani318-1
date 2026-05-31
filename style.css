@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    
 }
 
 .main{
     width: 100%;
-    background: linear-gradient(to top , rgb(0,0,0,0.5) 70%, rgba(0,0,0,0.5) 70%), url("images/hero.jpg") no-repeat center center/cover;
+    background: linear-gradient(to top , rgba(238, 117, 3, 0.781) 50%, rgba(238, 117, 3, 0.692) 50%), url("images/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -15,30 +14,30 @@
 }
 
 .navbar{
-    width: 1200px;
-    height: 75px;
+    width: 90%;
+    height: 10%;
     margin:auto;
      
 }
 
 .icon{
-    width: 200px;
+    width: 15%;
     float: left;
-    height: 70px;
+    height: 10%;
 }
 
 .logo{
     color: blue;
-    font-size: 35px;
+    font-size: 220%;
     font-weight: arial;
-    line-height: 75px;
-    padding-left: 20px;
+    line-height: 200%;
+    padding-left: 2%;
 }
 
 .menu{
-    width: 400px;
+    width: 35%;
     float: left;
-    height: 70px;
+    height: 10%;
 }
 
 ul{
@@ -51,9 +50,9 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 100%;
 
 }
 
@@ -70,80 +69,823 @@ ul li a:hover{
 
 }
 
-.search{ 
-    width: 300px;
-    float: right;
-    margin-left: 270px;
+.cn a:hover{
+   background-color: rgb(230, 8, 8);
 
 }
 
-.srch{
+.content span{
+    color: blue;
+    font-size: 60px;
     font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
+
+}
+
+.form{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: absolute;
+    top: -20px;
+    padding: 870px;
+    border-radius: 10px;
+    padding-top: 25px;
+
+}
+
+.form h2{
+    width: 220%;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(5, 9, 243);
+    font-size: 20px;
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 220px;
+    height: 30px;
     background: transparent;
-    border: 1px solid #e47208;
-    margin-top: 13px;
-    color: white;
+    border-bottom: 1px solid #0b2be2;
+    border-top: none;
     border-right: none;
-    font-size: 16px;
-    float: right;
-    padding: 0 10px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #e47208;
-    border: 2px solid #e47208;
-    margin-top: 13px;
-    color: white;
+    border-left: none;
+    color: rgb(12, 6, 6);
     font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    letter-spacing: 1px;
+    margin: 20px;
+    font-family: 'sans-serif';
 }
 
-.btn:focus{
+.form :focus{
     outline: none;
+
 }
 
-.srch:focus{
-    outline: none;
+placeholder{
+    color: rgb(12, 6, 6);
+    font-family: 'arial';
+
+
 }
 
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #0843e4;
+    border: none; 
+    margin: 20px;
+    color: rgb(12, 6, 6);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
     color: white;
-    position: relative;
+    transition: 0.4s ease-in-out;
 
 }
-.content .paragraph{
-    padding: 0 28px;
-    padding-bottom: 25px;
-    font-family:Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
+
+.btnn:hover{
+    background-color: white;
+    color: black;
+}
+.btnn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+.form .link{
+    text-decoration: Areial, helvetica, sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    text-align: center;
+
+
 }
 
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 28px;
-    padding-top: 9%;
-    letter-spacing: 2px;
+.form .link a{
+    text-decoration: none;
+    color: rgb(12, 56, 202);
+    
 }
 
-.content cn{
-    width: 150px;
-    height: 50px;  
-    background: #e47208;
+.liw{
+   padding-top: 15px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+/* ==============================
+   OUR MISSION SECTION
+============================== */
+
+.mission-section{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    background-color:#ffffff;
+    padding:3%;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.mission-section h2{
+    color:#006633;
+    font-size:220%;
+    text-align:center;
+    font-family:Georgia, serif;
+}
+
+.mission-section p{
+    font-size:115%;
+    line-height:180%;
+    color:#333;
+    text-align:justify;
+}
+/* ==============================
+   OUR TEAM SECTION
+============================== */
+
+.team-section{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    background-color:#ffffff;
+    padding:3%;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+    text-align:center;
+}
+
+.team-section h2{
+    color:#003366;
+    font-size:220%;
+    font-family:Georgia, serif;
+}
+
+.team-section p{
+    font-size:115%;
+    line-height:170%;
+    color:#333;
+}
+
+.team-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:4%;
+}
+
+.team-box{
+    width:28%;
+    background-color:#f5f5f5;
+    padding:2%;
+    border-radius:10px;
+    margin-bottom:3%;
+}
+
+.team-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+.team-box h3{
+    color:#b35c00;
+    font-size:150%;
+    margin-top:5%;
+    font-family:Tahoma, sans-serif;
+}
+
+.team-role{
+    color:#006633;
+    font-weight:bold;
+    font-size:110%;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media screen and (max-width:768px){
+
+    .team-box{
+        width:90%;
+    }
+
+}
+/* ==============================
+   ABOUT US SECTION
+============================== */
+
+.about-section{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    background-color:#ffffff;
+    padding:3%;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+    text-align:center;
+}
+
+.about-section h2{
+    color:#006633;
+    font-size:220%;
+    font-family:Georgia, serif;
+}
+
+.about-section p{
+    font-size:115%;
+    line-height:180%;
+    color:#333;
+    text-align:justify;
+}
+
+.about-image{
+    width:70%;
+    border-radius:10px;
+    margin-top:2%;
+    margin-bottom:3%;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:768px){
+
+    .about-image{
+        width:95%;
+    }
+
+}
+/* ==============================
+   BOOKING PAGE
+============================== */
+
+.booking-section{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    background-color:#fff7e6;
+    padding:3%;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.booking-section h2{
+    text-align:center;
+    color:#b35c00;
+    font-size:220%;
+    font-family:"Trebuchet MS", sans-serif;
+}
+
+.booking-section p{
+    font-size:115%;
+    line-height:180%;
+    text-align:center;
+    color:#333;
+}
+
+.booking-image{
+    width:70%;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+    margin-top:2%;
+    margin-bottom:3%;
+}
+
+.booking-section label{
+    font-size:110%;
+    font-weight:bold;
+    color:#444;
+}
+
+.booking-section input,
+.booking-section select,
+.booking-section textarea{
+    width:95%;
+    padding:1.5%;
+    margin-top:1%;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:100%;
+    font-family:Verdana, sans-serif;
+}
+
+.booking-section input[type="submit"]{
+    background-color:#cc6600;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:110%;
+}
+
+.booking-section input[type="submit"]:hover{
+    background-color:#994d00;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:768px){
+
+    .booking-image{
+        width:95%;
+    }
+
+}
+/* ==============================
+   CONTACT PAGE
+============================== */
+
+.contact-section{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    padding:3%;
+    background-color:#fdf0f5;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+.contact-section h2{
+    text-align:center;
+    color:#99004d;
+    font-size:220%;
+    font-family:Verdana, sans-serif;
+}
+
+.contact-section p{
+    font-size:115%;
+    line-height:180%;
+    color:#333;
+}
+
+.contact-image{
+    width:70%;
+    display:block;
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:3%;
+    border-radius:10px;
+}
+
+.contact-details{
+    background-color:white;
+    padding:2%;
+    border-radius:8px;
+    margin-bottom:3%;
+}
+
+.contact-details h3{
+    color:#99004d;
+    font-size:160%;
+    font-family:Tahoma, sans-serif;
+}
+
+.hours{
+    background-color:white;
+    padding:2%;
+    border-radius:8px;
+    margin-bottom:3%;
+}
+
+.hours h3{
+    color:#99004d;
+    font-size:160%;
+}
+
+.contact-form{
+    background-color:white;
+    padding:3%;
+    border-radius:8px;
+}
+
+.contact-form h3{
+    color:#99004d;
+    font-size:160%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:95%;
+    padding:1.5%;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:100%;
+    font-family:Verdana, sans-serif;
+}
+
+.contact-form input[type="submit"]{
+    background-color:#cc0066;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:110%;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color:#99004d;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:768px){
+
+    .contact-image{
+        width:95%;
+    }
+
+}
+/* =================================
+   ENQUIRY PAGE
+================================= */
+
+.enquiry-page{
+    background-color:#e8f4ff; /* Light Blue Background */
+    font-family:Tahoma, sans-serif;
+}
+
+.enquiry-page header{
+    background-color:#0077b6;
+    color:white;
+}
+
+.enquiry-page nav{
+    background-color:#023e8a;
+    padding:1.5%;
+    text-align:center;
+}
+
+.enquiry-page nav a{
+    color:white;
+    text-decoration:none;
+    margin:2%;
+    font-size:120%;
+    font-weight:bold;
+}
+
+.enquiry-page nav a:hover{
+    color:#ffd166;
+}
+
+/* =================================
+   ENQUIRY SECTION
+================================= */
+
+.enquiry-section{
+    width:90%;
+    margin:auto;
+    margin-top:3%;
+    padding:3%;
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.enquiry-section h2{
+    color:#0077b6;
+    font-size:220%;
+    margin-bottom:2%;
+}
+
+.enquiry-section p{
+    font-size:115%;
+    line-height:180%;
+}
+
+.enquiry-image{
+    width:70%;
+    display:block;
+    margin:auto;
+    margin-top:2%;
+    margin-bottom:3%;
+    border-radius:10px;
+}
+
+/* =================================
+   ENQUIRY FORM
+================================= */
+
+.form-section{
+    width:90%;
+    margin:auto;
+    margin-top:3%;
+    padding:3%;
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2{
+    color:#0077b6;
+    font-size:220%;
+    margin-bottom:2%;
+}
+
+.form-section label{
+    font-weight:bold;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea{
+    width:95%;
+    padding:1.5%;
+    border:1px solid #cccccc;
+    border-radius:5px;
+    margin-top:1%;
+    font-size:100%;
+}
+
+.form-section textarea{
+    resize:vertical;
+}
+
+.form-section input[type="submit"]{
+    background-color:#0077b6;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:110%;
+}
+
+.form-section input[type="submit"]:hover{
+    background-color:#023e8a;
+}
+
+/* =================================
+   ENQUIRY BUTTON
+================================= */
+
+.enquiry-btn{
+    background-color:#0077b6;
+    color:white;
+    text-decoration:none;
+    padding:1.5% 3%;
+    border-radius:8px;
+}
+
+.enquiry-btn:hover{
+    background-color:#023e8a;
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media screen and (max-width:768px){
+
+    .enquiry-image{
+        width:95%;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea{
+        width:100%;
+    }
+
+    .enquiry-page h1{
+        font-size:220%;
+    }
+
+    .enquiry-section h2,
+    .form-section h2{
+        font-size:180%;
+    }
+}/* =================================
+   BOOK YOUR SERVICE SECTION
+================================= */
+
+.booking-callout{
+    background-color: #7b2cbf; /* Purple background */
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 4% auto;
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.booking-callout h2{
+    font-size: 280%;
+    margin-bottom: 2%;
+    color: #ffffff;
+}
+
+.booking-callout p{
+    font-size: 130%;
+    line-height: 180%;
+    margin-bottom: 3%;
+}
+
+.booking-callout .btn{
+    background-color: #ffffff;
+    color: #7b2cbf;
+    padding: 1.5% 4%;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.booking-callout .btn:hover{
+    background-color: #f3e8ff;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width:768px){
+
+    .booking-callout h2{
+        font-size: 200%;
+    }
+
+    .booking-callout p{
+        font-size: 110%;
+    }
+
+    .booking-callout .btn{
+        font-size: 100%;
+    }
+}
+/* ==============================
+   ENQUIRY PAGE
+============================== */
+
+body{
+    background-color: limegreen;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+header h1{
+    font-size: 300%;
+    margin-bottom: 1%;
+}
+
+header p{
+    font-size: 120%;
+}
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav{
+    margin-top: 1%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 2%;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+/* ==============================
+   ENQUIRY SECTION
+============================== */
+
+.enquiry-section{
+    width: 80%;
+    margin: 4% auto;
+    background-color: white;
+    padding: 4%;
+    border-radius: 2%;
+    box-shadow: 0 0.5% 1% rgba(0,0,0,0.2);
+}
+
+.enquiry-section h2{
+    color: #006400;
+    font-size: 250%;
+    text-align: center;
+}
+
+.enquiry-section p{
+    font-size: 120%;
+    line-height: 180%;
+    text-align: center;
+}
+
+/* ==============================
+   IMAGE
+============================== */
+
+.enquiry-image{
+    width: 100%;
+    border-radius: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+form{
+    margin-top: 3%;
+}
+
+label{
+    font-size: 120%;
+    font-weight: bold;
+    color: #006400;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 0.1% solid #cccccc;
+    border-radius: 1%;
+    font-size: 100%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+/* ==============================
+   SUBMIT BUTTON
+============================== */
+
+input[type="submit"]{
+    background-color: #006400;
+    color: white;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-
+    padding: 1.5% 4%;
+    font-size: 120%;
+    font-weight: bold;
+    border-radius: 1%;
+    cursor: pointer;
 }
 
+input[type="submit"]:hover{
+    background-color: #228B22;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 4%;
+}
+
+footer p{
+    font-size: 100%;
+    margin: 1%;
+}
+
+/* ==============================
+   MOBILE VIEW
+============================== */
+
+@media screen and (max-width: 768px){
+
+    .enquiry-section{
+        width: 95%;
+    }
+
+    header h1{
+        font-size: 220%;
+    }
+
+    .enquiry-section h2{
+        font-size: 180%;
+    }
+
+    nav a{
+        display: block;
+        margin: 2%;
+    }
+}
