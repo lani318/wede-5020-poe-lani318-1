@@ -6,7 +6,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top , rgba(238, 117, 3, 0.781) 50%, rgba(238, 117, 3, 0.692) 50%), url("images/hero.jpg");
+    background: linear-gradient(to top , rgba(3, 238, 15, 0.781) 50%, rgba(3, 238, 15, 0.781) 50%), url("images/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -27,7 +27,7 @@
 }
 
 .logo{
-    color: blue;
+    color: rgb(0, 68, 255);
     font-size: 220%;
     font-weight: arial;
     line-height: 200%;
@@ -65,12 +65,12 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #1f42e0;
+    color: #e0d31f;
 
 }
 
 .cn a:hover{
-   background-color: rgb(230, 8, 8);
+   background-color: rgb(230, 215, 8);
 
 }
 
