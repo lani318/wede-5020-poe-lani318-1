@@ -13,9 +13,17 @@
 <meta charset="UTF-8">
 <title>Booking</title>
 </head>
+
+<button id="topBtn" onclick="topFunction()">
+    Top
+</button>
+
+<script src="script.js"></script>
+
+
 <body>
     <form onsubmit="return validateBooking()"></form>
-    
+
     <script src="script.js" defer></script>
 
 <header>
@@ -100,7 +108,7 @@
 </form>
 
 <footer>
-<p>© 2026 Precision Auto Care</p>
+    <p>&copy; <span id="year"></span> Precision Auto Care</p>
 </footer>
 
 </body>

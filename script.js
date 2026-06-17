@@ -226,3 +226,117 @@ function searchServices() {
         }
     }
 }
+/* ==================================
+   PRECISION AUTO CARE SCRIPT
+================================== */
+
+/* Booking Form Validation */
+
+function validateBooking() {
+
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let vehicle = document.getElementById("vehicle").value;
+    let service = document.getElementById("service").value;
+    let date = document.getElementById("date").value;
+
+    if (
+        fullname === "" ||
+        email === "" ||
+        phone === "" ||
+        vehicle === "" ||
+        date === ""
+    ) {
+
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    alert(
+        "Thank you " +
+        fullname +
+        "! Your booking for " +
+        service +
+        " has been submitted successfully."
+    );
+
+    return true;
+}
+
+/* Display Current Year */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let year = document.getElementById("year");
+
+    if (year) {
+
+        year.innerHTML = new Date().getFullYear();
+
+    }
+
+});
+
+/* Display Date and Time */
+
+function updateDateTime() {
+
+    let display = document.getElementById("datetime");
+
+    if (display) {
+
+        let now = new Date();
+
+        display.innerHTML =
+            now.toLocaleDateString() +
+            " | " +
+            now.toLocaleTimeString();
+
+    }
+
+}
+
+setInterval(updateDateTime, 1000);
+
+/* Booking Confirmation */
+
+function bookingMessage() {
+
+    alert(
+        "Thank you for choosing Precision Auto Care. We will contact you shortly."
+    );
+
+}
+
+/* Back To Top Button */
+
+window.onscroll = function () {
+
+    let button = document.getElementById("topBtn");
+
+    if (!button) return;
+
+    if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+    ) {
+
+        button.style.display = "block";
+
+    } else {
+
+        button.style.display = "none";
+
+    }
+
+};
+
+function topFunction() {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
