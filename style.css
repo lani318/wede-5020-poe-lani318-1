@@ -6,7 +6,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top , rgba(3, 238, 15, 0.781) 50%, rgba(3, 238, 15, 0.781) 50%), url("images/hero.jpg");
+    background: linear-gradient(to top , rgba(117, 238, 3, 0.781) 50%, rgba(3, 238, 15, 0.781) 50%), url("images/hero.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
