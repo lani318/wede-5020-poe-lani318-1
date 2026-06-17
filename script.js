@@ -1,30 +1,82 @@
-/* ===================================
-   PRECISION AUTO CARE JAVASCRIPT
-=================================== */
 
-/* Welcome Message */
+document.addEventListener("DOMContentLoaded", function () {
 
-window.onload = function () {
+    console.log("Precision Auto Care Website Loaded Successfully");
 
-    console.log("Precision Auto Care Website Loaded");
+});
 
-};
+/* =====================================
+   MOBILE NAVIGATION MENU
+===================================== */
 
-/* ===================================
-   HOME PAGE BUTTON
-=================================== */
+function toggleMenu() {
 
-function viewServices() {
+    let nav = document.getElementById("mainNav");
 
-    alert("Redirecting to Services Page");
+    if (nav.style.display === "block") {
 
-    window.location.href = "services.html";
+        nav.style.display = "none";
 
+    } else {
+
+        nav.style.display = "block";
+
+    }
 }
 
-/* ===================================
+/* =====================================
+   LIVE DATE AND TIME
+===================================== */
+
+function updateDateTime() {
+
+    let dateTime = document.getElementById("datetime");
+
+    if (dateTime) {
+
+        let current = new Date();
+
+        dateTime.innerHTML =
+            current.toLocaleDateString() +
+            " | " +
+            current.toLocaleTimeString();
+    }
+}
+
+setInterval(updateDateTime, 1000);
+
+/* =====================================
+   BOOKING FORM VALIDATION
+===================================== */
+
+function validateBooking() {
+
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let vehicle = document.getElementById("vehicle").value;
+
+    if (
+        fullname === "" ||
+        email === "" ||
+        phone === "" ||
+        vehicle === ""
+    ) {
+
+        alert("Please complete all booking details.");
+        return false;
+    }
+
+    alert(
+        "Thank you for booking with Precision Auto Care. We will contact you shortly."
+    );
+
+    return true;
+}
+
+/* =====================================
    ENQUIRY FORM VALIDATION
-=================================== */
+===================================== */
 
 function validateEnquiry() {
 
@@ -32,126 +84,93 @@ function validateEnquiry() {
     let email = document.getElementById("email").value;
     let enquiry = document.getElementById("enquiry").value;
 
-    if (fullname === "" || email === "" || enquiry === "") {
+    if (
+        fullname === "" ||
+        email === "" ||
+        enquiry === ""
+    ) {
 
         alert("Please complete all enquiry fields.");
         return false;
-
     }
 
-    alert("Thank you for your enquiry. We will contact you shortly.");
+    alert("Your enquiry has been submitted successfully.");
 
     return true;
-
 }
 
-/* ===================================
-   BOOKING FORM VALIDATION
-=================================== */
-
-function validateBooking() {
-
-    let fullname = document.getElementById("fullname").value;
-    let email = document.getElementById("email").value;
-    let vehicle = document.getElementById("vehicle").value;
-    let date = document.getElementById("date").value;
-
-    if (fullname === "" ||
-        email === "" ||
-        vehicle === "" ||
-        date === "") {
-
-        alert("Please complete all booking details.");
-        return false;
-
-    }
-
-    alert("Booking submitted successfully.");
-
-    return true;
-
-}
-
-/* ===================================
+/* =====================================
    CONTACT FORM VALIDATION
-=================================== */
+===================================== */
 
 function validateContact() {
 
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
 
-    if (name === "" || email === "") {
+    if (
+        name === "" ||
+        email === "" ||
+        message === ""
+    ) {
 
         alert("Please complete all required fields.");
         return false;
-
     }
 
-    alert("Your message has been sent.");
+    alert("Thank you. Your message has been sent.");
 
     return true;
-
 }
 
-/* ===================================
-   ABOUT PAGE MESSAGE
-=================================== */
+/* =====================================
+   SERVICE BUTTONS
+===================================== */
 
-function aboutMessage() {
+function serviceInfo(service) {
 
-    alert("Thank you for learning more about Precision Auto Care.");
-
+    alert(
+        "You selected " +
+        service +
+        ". Contact us for more information."
+    );
 }
 
-/* ===================================
-   SERVICES PAGE MESSAGE
-=================================== */
+/* =====================================
+   BACK TO TOP BUTTON
+===================================== */
 
-function serviceMessage(service) {
+window.onscroll = function () {
 
-    alert("You selected: " + service);
+    let button = document.getElementById("topBtn");
 
-}
+    if (!button) return;
 
-/* ===================================
-   BOOK NOW BUTTON
-=================================== */
+    if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+    ) {
 
-function bookNow() {
+        button.style.display = "block";
 
-    alert("Taking you to the booking page.");
+    } else {
 
-    window.location.href = "booking.html";
-
-}
-
-/* ===================================
-   LIVE DATE AND TIME
-=================================== */
-
-function displayDateTime() {
-
-    let currentDate = new Date();
-
-    let dateElement = document.getElementById("datetime");
-
-    if (dateElement) {
-
-        dateElement.innerHTML =
-            currentDate.toLocaleDateString() +
-            " " +
-            currentDate.toLocaleTimeString();
-
+        button.style.display = "none";
     }
+};
 
+function topFunction() {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
-setInterval(displayDateTime, 1000);
-
-/* ===================================
+/* =====================================
    FOOTER YEAR
-=================================== */
+===================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -160,7 +179,50 @@ document.addEventListener("DOMContentLoaded", function () {
     if (year) {
 
         year.innerHTML = new Date().getFullYear();
-
     }
-
 });
+
+/* =====================================
+   BOOK NOW BUTTON
+===================================== */
+
+function bookNow() {
+
+    window.location.href = "booking.html";
+}
+
+/* =====================================
+   SERVICE SEARCH
+===================================== */
+
+function searchServices() {
+
+    let input =
+        document.getElementById("serviceSearch");
+
+    if (!input) return;
+
+    let filter =
+        input.value.toUpperCase();
+
+    let cards =
+        document.getElementsByClassName("service-box");
+
+    for (let i = 0; i < cards.length; i++) {
+
+        let text =
+            cards[i].textContent ||
+            cards[i].innerText;
+
+        if (
+            text.toUpperCase().indexOf(filter) > -1
+        ) {
+
+            cards[i].style.display = "";
+
+        } else {
+
+            cards[i].style.display = "none";
+        }
+    }
+}
