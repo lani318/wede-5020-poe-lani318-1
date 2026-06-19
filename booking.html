@@ -61,7 +61,7 @@
 
     <!-- Booking Form -->
     <form action="#" method="post">
-
+       
         <!-- Customer Name -->
         <label for="fullname">Full Name:</label><br>
         <input type="text" id="fullname" name="fullname" required><br><br>
@@ -92,8 +92,8 @@
         </select><br><br>
 
         <!-- Booking Date -->
-        <label for="date">Preferred Booking Date:</label><br>
-        <input type="date" id="date" name="date" required><br><br>
+        <label for="date">Preferred Booking Date:</label></form><br>
+        <input type="date" id="date" name="date" required>
 
         <!-- Additional Notes -->
         <label for="message">Additional Information:</label><br>
@@ -102,7 +102,50 @@
         <!-- Submit Button -->
         <input type="submit" value="Book Appointment">
 
-    </form>
+    </form> 
+
+
+<form id="bookingForm" onsubmit="return validateBooking();">
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label for="vehicle">Vehicle Make & Model</label>
+    <input type="text" id="vehicle" placeholder="Toyota Corolla" required>
+
+    <label for="service">Select Service</label>
+    <select id="service" required>
+
+        <option value="">Choose a Service</option>
+        <option value="Engine Repair">Engine Repair</option>
+        <option value="Vehicle Service">Vehicle Service</option>
+        <option value="Brake Repair">Brake Repair</option>
+        <option value="Wheel Alignment">Wheel Alignment</option>
+        <option value="Battery Replacement">Battery Replacement</option>
+        <option value="Diagnostic Inspection">Diagnostic Inspection</option>
+
+    </select>
+
+    <label for="date">Select Booking Date</label>
+    <input type="date" id="date" required>
+
+    <label for="additionalInfo">Additional Information</label>
+    <textarea
+        id="additionalInfo"
+        rows="6"
+        placeholder="Describe any vehicle problems or special requests"></textarea>
+
+    <button type="submit">
+        Book Appointment
+    </button>
+
+</form>
 
 </section>
 </form>

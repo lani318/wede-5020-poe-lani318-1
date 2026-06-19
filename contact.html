@@ -76,6 +76,8 @@
 
         <form action="#" method="post">
 
+      <form id="contactForm" onsubmit="return sendContactWhatsApp();"></form>  
+    
             <label for="name">Full Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -94,6 +96,45 @@
             <input type="submit" value="Send Message">
 
         </form>
+
+        <form onsubmit="return sendContactWhatsApp()">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+
+    <input type="email" id="email" placeholder="Email Address" required>
+
+    <input type="tel" id="phone" placeholder="Phone Number">
+
+    <textarea id="message" placeholder="Enter your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+
+ </form>
+
+        </div>
+
+    </section>
+
+    <!-- Date & Time -->
+    <section class="datetime-section">
+
+        <h3>Current Date & Time</h3>
+
+        <p id="datetime"></p>
+
+    </section>
+
+    <!-- Back To Top Button -->
+    <button id="topBtn" onclick="topFunction()">
+        Top
+    </button>
+</form>
+</form>
+
+</button>
+
 
     </div>
 

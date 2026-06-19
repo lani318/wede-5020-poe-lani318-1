@@ -340,3 +340,139 @@ function topFunction() {
     });
 
 }
+
+function sendContactWhatsApp() {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if(name === "" || email === "" || message === "") {
+
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    let whatsappMessage =
+        "CONTACT REQUEST\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Message: " + message;
+
+    let whatsappURL =
+        "https://wa.me/27763537329?text=" +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+    alert("Opening WhatsApp...");
+
+    return false;
+}
+
+
+/* ==================================
+   ENQUIRY FORM TO WHATSAPP
+================================== */
+
+function sendEnquiryWhatsApp() {
+
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let vehicle = document.getElementById("vehicle").value;
+    let enquiry = document.getElementById("enquiry").value;
+
+    if(fullname === "" || email === "" || enquiry === "") {
+
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    let whatsappMessage =
+    "NEW ENQUIRY%0A%0A" +
+    "Customer Name: " + fullname + "%0A" +
+    "Email: " + email + "%0A" +
+    "Vehicle: " + vehicle + "%0A" +
+    "Enquiry: " + enquiry;
+
+    window.open(
+        "https://wa.me/27763537329?text=" + whatsappMessage,
+        "_blank"
+    );
+
+    return false;
+}
+
+/* ==================================
+   CONTACT US FORM TO WHATSAPP
+================================== */
+
+function sendContactWhatsApp() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    if(name === "" || email === "" || message === "") {
+
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    let whatsappMessage =
+    "CONTACT FORM SUBMISSION%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Email: " + email + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Message: " + message;
+
+    window.open(
+        "https://wa.me/27763537329?text=" + whatsappMessage,
+        "_blank"
+    );
+
+    return false;
+}
+function validateBooking() {
+
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let vehicle = document.getElementById("vehicle").value;
+    let service = document.getElementById("service").value;
+    let date = document.getElementById("date").value;
+    let additionalInfo = document.getElementById("additionalInfo").value;
+
+    if (
+        fullname === "" ||
+        email === "" ||
+        phone === "" ||
+        vehicle === "" ||
+        date === ""
+    ) {
+
+        alert("Please complete all required booking fields.");
+        return false;
+    }
+
+    let bookingMessage =
+        "NEW SERVICE BOOKING\n\n" +
+        "Customer Name: " + fullname + "\n" +
+        "Email: " + email + "\n" +
+        "Phone: " + phone + "\n" +
+        "Vehicle: " + vehicle + "\n" +
+        "Service: " + service + "\n" +
+        "Booking Date: " + date + "\n" +
+        "Additional Information: " + additionalInfo;
+
+    let whatsappURL =
+        "https://wa.me/27763537329?text=" +
+        encodeURIComponent(bookingMessage);
+
+    window.open(whatsappURL, "_blank");
+
+    return false;
+}
