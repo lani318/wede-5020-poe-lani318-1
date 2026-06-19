@@ -436,8 +436,8 @@ function sendContactWhatsApp() {
 
     return false;
 }
-function validateBooking() {
 
+function sendBookingWhatsApp() {
     let fullname = document.getElementById("fullname").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
